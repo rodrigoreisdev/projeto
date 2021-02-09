@@ -1,22 +1,29 @@
-<p-table [value]="item">
-    <ng-template pTemplate="header">
+<table>
+    <tr>
+        <th colspan="2" class="title">Detalhes do produto "{{item.name_pro}}"</th>
+    </tr>
         <tr>
-            <th>ID</th>
-            <th>Nome</th>
-            <th>Preço</th>
-            <th>Categoria</th>
-            <th>Ações</th>
+            <th>SKU</th>
+            <td>{{item.sku_pro}}</td>           
+            
         </tr>
-    </ng-template>
-    <ng-template pTemplate="body">
         <tr>
-            <td>{{item.sku_pro}}</td>
+            <th>Nome</th>
             <td>{{item.name_pro}}</td>
-            <td>{{item.fk_id_category}}</td>
-            <td>{{item.brand}}</td>
+        </tr>
+        <tr>
+            <th>Categoria</th>
             <td>{{item.category}}</td>
         </tr>
-    </ng-template>
-  </p-table>
+        <tr>
+            <th>Marca</th>
+            <td>{{item.brand}}</td>
+        </tr>
+        <tr>
+            <th>Descrição</th>
+            <td>{{item.description_pro}}</td>
+        </tr>
+
+  </table>
   
  
