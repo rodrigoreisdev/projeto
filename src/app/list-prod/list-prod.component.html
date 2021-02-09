@@ -1,0 +1,26 @@
+<p-table [value]="product">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+            <th>Ações</th>
+            <th></th>
+            <th>Data Criação</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{product.id}}</td>
+            <td><img src="{{product.medias}}" class="img_prod"></td>
+            <td>{{product.name_pro}}</td>
+            <td>{{product.price_sale_det | currency: 'BRL'}}</td>
+            <td>{{product.name_category}}</td>
+            <td><ng-template [ngIf]="product.status =='A'"><i class="pi pi-circle-on" style="color: green;"></i></ng-template></td>
+            <td><button pButton type="button" label="Detalhes" [routerLink]="['/detail', product.id]"  routerLinkActive="active"></button></td>
+            <td>{{product.created_at | date:'dd/MM/yyyy' }}</td>
+        </tr>
+    </ng-template>
+  </p-table>

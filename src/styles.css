@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding:  0;
+}
+
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(208, 222, 238);
+
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: rgb(49, 109, 136);
+}
+.header h1{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 1.2em;
+    position: relative;
+}
+
+.content{
+    width: 100%;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(51, 51, 51);
+    position: relative;
+    float: left;
+}
+.footer p{
+    color: rgb(160, 160, 160);
+    font-size: 0.8em;
+    padding: 0.9em;
+    text-align: center;
+    transition: 0.5s;
+    
+}
+.footer p:hover{
+    color: rgb(231, 231, 231);
+    font-size: 0.9em;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    padding: 10px;
+}
+.img_prod{
+    width: 100px;
+    height: 100%;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.img_prod:hover{
+    transform: scale(2.0);
+}

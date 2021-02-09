@@ -1,0 +1,22 @@
+<p-table [value]="item">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+            <th>Ações</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body">
+        <tr>
+            <td>{{item.sku_pro}}</td>
+            <td>{{item.name_pro}}</td>
+            <td>{{item.fk_id_category}}</td>
+            <td>{{item.brand}}</td>
+            <td>{{item.category}}</td>
+        </tr>
+    </ng-template>
+  </p-table>
+  
+ 
