@@ -9,7 +9,9 @@ import { ListProdComponent } from './list-prod/list-prod.component';
 import { DetailProdComponent } from './detail-prod/detail-prod.component';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
-import {AccordionModule} from 'primeng/accordion';   
+import {AccordionModule} from 'primeng/accordion';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';   
 
 
 
@@ -18,6 +20,8 @@ import {AccordionModule} from 'primeng/accordion';
     AppComponent,
     ListProdComponent,
     DetailProdComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

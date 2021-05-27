@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-detail-prod',
   templateUrl: './detail-prod.component.html',
-  styleUrls: ['./detail-prod.component.css']
+  styleUrls: ['./detail-prod.component.less']
 })
 export class DetailProdComponent implements OnInit {
 
@@ -18,7 +18,6 @@ export class DetailProdComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(param =>{this.id_prod = param.id})
     this.apiService.GetListProdDetail(this.id_prod).subscribe(data => { this.item = data})
-    //this.ApiService.GetListProd().subscribe(data => { this.product = data })
   }
 
 }
